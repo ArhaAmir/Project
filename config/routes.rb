@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  resources :stories
-  resources :friends
+  resources :users
+  resources :stories do
+     resources:comments, only:[:create]
+  end
+  resources :stories do
+    resources :comments, only: [:create]
+  end
+  
+  resources :likes, only:[:create,:destory]
+
   get 'home/about'
   root 'home#index'
   get 'home/stories'
