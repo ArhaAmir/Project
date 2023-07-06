@@ -82,5 +82,4 @@ class StoriesController < ApplicationController
       params.require(:story).permit(:story_id, :title, :text)
     end
 
-    def story
 end
