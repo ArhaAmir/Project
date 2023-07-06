@@ -1,0 +1,54 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%; /* Adjust the height as needed */
+    margin-top: 20vh;
+}
+
+.table{
+  border: 1px solid black;
+  margin: 1rem;
+  width: 30%;
+}
+
+.t-head{
+  background-color: gray;
+  color: white;
+  font-size: larger;
+}
+
+h1{
+  margin: 1rem;
+}
+
+.btn{
+  padding: 0.2rem;
+  width: 5rem;
+  font-weight: bold;
+  margin: 1rem;
+  border-radius: 100px;
+  background-color: rgb(3, 0, 175);
+  font-size: 1rem;
+  color: white;
+}
+
+.btn:hover{
+  background-color: rgb(201, 23, 23);
+  color: white;
+  transition: 0.5s;
+}
+
+.parent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
