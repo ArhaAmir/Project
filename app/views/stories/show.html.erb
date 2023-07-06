@@ -6,6 +6,13 @@
 
 <%= render @story %>
 
+<form action=" /likes" method="story">
+
+
+<input type="hidden" name="like[story_id]" value="<%= @story.id %>">
+<input type="submit" value="Like">
+</form>
+
 <button type="button" class="btn btn-outline-dark bm-4">
   <%= link_to "Edit this story", edit_story_path(@story) %> 
   </button>

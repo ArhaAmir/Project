@@ -12315,3 +12315,1469 @@ Processing by StoriesController#index as HTML
 Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.7ms | Allocations: 3516)
 
 
+Started GET "/" for 127.0.0.1 at 2023-07-06 14:49:19 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 294)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 392)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 34163)
+Completed 200 OK in 45ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 38841)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 14:49:20 +0500
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (1.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/_story.html.erb (Duration: 0.5ms | Allocations: 219)
+  Rendered stories/index.html.erb within layouts/application (Duration: 41.5ms | Allocations: 6027)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 8451)
+Completed 200 OK in 54ms (Views: 38.8ms | ActiveRecord: 10.2ms | Allocations: 9822)
+
+
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 14:49:21 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (1.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 820)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3108)
+Completed 200 OK in 25ms (Views: 9.9ms | ActiveRecord: 1.9ms | Allocations: 5835)
+
+
+Started GET "/stories/7/edit" for 127.0.0.1 at 2023-07-06 14:49:22 +0500
+Processing by StoriesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/edit.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 5.3ms | Allocations: 2224)
+  Rendered stories/edit.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2573)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4857)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 5710)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 14:49:24 +0500
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (1.0ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/_story.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered stories/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 934)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 3226)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 1.0ms | Allocations: 3506)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 14:49:26 +0500
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/_story.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered stories/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 932)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3223)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms | Allocations: 3497)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-06 14:49:28 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2479)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2742)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230706095349)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password" character varying, "bio" text, "contact" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230706095349"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLikes (20230706095726)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+Started GET "/" for 127.0.0.1 at 2023-07-06 15:28:20 +0500
+  
+SyntaxError (/home/tk-lpt-0915/Documents/Project/config/routes.rb:16: syntax error, unexpected `end'):
+  
+config/routes.rb:16: syntax error, unexpected `end'
+config/routes.rb:16: syntax error, unexpected `end'
+config/routes.rb:16: syntax error, unexpected `end'
+Started GET "/" for 127.0.0.1 at 2023-07-06 15:30:18 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230706095726_create_likes.rb
+
+
+):
+  
+activerecord (7.0.5) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.5) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.5) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.5) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.5) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-07-06 15:30:20 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLikes (20230706095726)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  
+SyntaxError (/home/tk-lpt-0915/Documents/Project/db/migrate/20230706095726_create_likes.rb:9: syntax error, unexpected ':', expecting `end' or dummy end
+...[:user_id, :story_id],:unique :  true 
+...                              ^
+):
+  
+db/migrate/20230706095726_create_likes.rb:9: syntax error, unexpected ':', expecting `end' or dummy end
+...[:user_id, :story_id],:unique :  true 
+...                              ^
+db/migrate/20230706095726_create_likes.rb:9: syntax error, unexpected ':', expecting `end' or dummy end
+...[:user_id, :story_id],:unique :  true 
+...                              ^
+db/migrate/20230706095726_create_likes.rb:9: syntax error, unexpected ':', expecting `end' or dummy end
+...[:user_id, :story_id],:unique :  true 
+...                              ^
+activerecord (7.0.5) lib/active_record/migration.rb:1056:in `load'
+activerecord (7.0.5) lib/active_record/migration.rb:1056:in `load_migration'
+activerecord (7.0.5) lib/active_record/migration.rb:1050:in `migration'
+activerecord (7.0.5) lib/active_record/migration.rb:1046:in `disable_ddl_transaction'
+activerecord (7.0.5) lib/active_record/migration.rb:1418:in `use_transaction?'
+activerecord (7.0.5) lib/active_record/migration.rb:1410:in `ddl_transaction'
+activerecord (7.0.5) lib/active_record/migration.rb:1359:in `execute_migration_in_transaction'
+activerecord (7.0.5) lib/active_record/migration.rb:1333:in `each'
+activerecord (7.0.5) lib/active_record/migration.rb:1333:in `migrate_without_lock'
+activerecord (7.0.5) lib/active_record/migration.rb:1282:in `block in migrate'
+activerecord (7.0.5) lib/active_record/migration.rb:1432:in `block in with_advisory_lock'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:215:in `with_connection'
+activerecord (7.0.5) lib/active_record/migration.rb:1447:in `with_advisory_lock_connection'
+activerecord (7.0.5) lib/active_record/migration.rb:1428:in `with_advisory_lock'
+activerecord (7.0.5) lib/active_record/migration.rb:1282:in `migrate'
+activerecord (7.0.5) lib/active_record/migration.rb:1117:in `up'
+activerecord (7.0.5) lib/active_record/migration.rb:1092:in `migrate'
+activerecord (7.0.5) lib/active_record/tasks/database_tasks.rb:262:in `migrate'
+activerecord (7.0.5) lib/active_record/migration.rb:137:in `block in <class:PendingMigrationError>'
+activesupport (7.0.5) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-07-06 15:32:04 +0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLikes (20230706095726)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  
+SyntaxError (/home/tk-lpt-0915/Documents/Project/db/migrate/20230706095726_create_likes.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...[:user_id, :story_id], unique :true 
+...                              ^
+):
+  
+db/migrate/20230706095726_create_likes.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...[:user_id, :story_id], unique :true 
+...                              ^
+db/migrate/20230706095726_create_likes.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...[:user_id, :story_id], unique :true 
+...                              ^
+db/migrate/20230706095726_create_likes.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...[:user_id, :story_id], unique :true 
+...                              ^
+activerecord (7.0.5) lib/active_record/migration.rb:1056:in `load'
+activerecord (7.0.5) lib/active_record/migration.rb:1056:in `load_migration'
+activerecord (7.0.5) lib/active_record/migration.rb:1050:in `migration'
+activerecord (7.0.5) lib/active_record/migration.rb:1046:in `disable_ddl_transaction'
+activerecord (7.0.5) lib/active_record/migration.rb:1418:in `use_transaction?'
+activerecord (7.0.5) lib/active_record/migration.rb:1410:in `ddl_transaction'
+activerecord (7.0.5) lib/active_record/migration.rb:1359:in `execute_migration_in_transaction'
+activerecord (7.0.5) lib/active_record/migration.rb:1333:in `each'
+activerecord (7.0.5) lib/active_record/migration.rb:1333:in `migrate_without_lock'
+activerecord (7.0.5) lib/active_record/migration.rb:1282:in `block in migrate'
+activerecord (7.0.5) lib/active_record/migration.rb:1432:in `block in with_advisory_lock'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:215:in `with_connection'
+activerecord (7.0.5) lib/active_record/migration.rb:1447:in `with_advisory_lock_connection'
+activerecord (7.0.5) lib/active_record/migration.rb:1428:in `with_advisory_lock'
+activerecord (7.0.5) lib/active_record/migration.rb:1282:in `migrate'
+activerecord (7.0.5) lib/active_record/migration.rb:1117:in `up'
+activerecord (7.0.5) lib/active_record/migration.rb:1092:in `migrate'
+activerecord (7.0.5) lib/active_record/tasks/database_tasks.rb:262:in `migrate'
+activerecord (7.0.5) lib/active_record/migration.rb:137:in `block in <class:PendingMigrationError>'
+activesupport (7.0.5) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-07-06 15:40:04 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLikes (20230706095726)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "user_id" bigint NOT NULL, "story_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_1e09b5dabf"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_b18ab44809"
+FOREIGN KEY ("story_id")
+  REFERENCES "stories" ("id")
+)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE INDEX "index_likes_on_user_id" ON "likes" ("user_id")[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE INDEX "index_likes_on_story_id" ON "likes" ("story_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230706095726"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-07-06 15:40:04 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 108)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 13911)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 14796)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 15:40:06 +0500
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/_story.html.erb (Duration: 0.5ms | Allocations: 194)
+  Rendered stories/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2993)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5382)
+Completed 200 OK in 36ms (Views: 10.9ms | ActiveRecord: 3.6ms | Allocations: 8662)
+
+
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 15:40:07 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.9ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 786)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3069)
+Completed 200 OK in 27ms (Views: 18.2ms | ActiveRecord: 0.9ms | Allocations: 4528)
+
+
+Started POST "/likes?authenticity_token=[FILTERED]&like%5Bstory_id%5D=7" for 127.0.0.1 at 2023-07-06 15:40:09 +0500
+Processing by LikesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "like"=>{"story_id"=>"7"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms | Allocations: 855)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+devise (4.9.2) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.5) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.5) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.5) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.5) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.5) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.5) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.5) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.5) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.5) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.5) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.5) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 15:40:10 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 563)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2880)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 3663)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 15:48:22 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.4ms | Allocations: 194)
+  Rendered stories/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1168)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 14738)
+Completed 200 OK in 39ms (Views: 13.2ms | ActiveRecord: 4.3ms | Allocations: 22248)
+
+
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 15:48:22 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (1.0ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 575)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2858)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 1.0ms | Allocations: 3641)
+
+
+Started POST "/likes?like%5Bstory_id%5D=7" for 127.0.0.1 at 2023-07-06 15:48:23 +0500
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"story_id"=>"7"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 526)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+devise (4.9.2) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.5) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.5) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.5) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.5) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.5) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.5) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.5) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.5) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.5) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.5) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.5) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 15:48:24 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 566)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2883)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3666)
+
+
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 17:06:25 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered stories/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1955)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 302)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 35682)
+Completed 200 OK in 80ms (Views: 59.9ms | ActiveRecord: 3.8ms | Allocations: 48419)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 17:06:27 +0500
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/_story.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered stories/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1220)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3512)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.6ms | Allocations: 3878)
+
+
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:06:28 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 8.2ms | Allocations: 1780)
+  Rendered stories/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2050)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2139)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2506)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.text_field :text  
+    rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text, style: "display: block" %>
+20:        <%= form.text_field :text  
+21:        rows: 5, cols: 40 %>
+22:      </div>
+23:    
+24:    
+25:      <div>
+26:        <%= form.submit %>
+27:      </div>
+28:    <% end %>
+  
+app/views/stories/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/stories/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/stories/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/stories/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/stories/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/stories/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:06:42 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 1.5ms | Allocations: 1424)
+  Rendered stories/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1783)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2615)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.text_field :text  rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text, style: "display: block" %>
+20:        <%= form.text_field :text  rows: 5, cols: 40 %>
+21:      </div>
+22:    
+23:    
+24:      <div>
+25:        <%= form.submit %>
+26:      </div>
+27:    <% end %>
+  
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:07:16 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 2.0ms | Allocations: 1423)
+  Rendered stories/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1692)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1782)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2608)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.text_area :text  rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text, style: "display: block" %>
+20:        <%= form.text_area :text  rows: 5, cols: 40 %>
+21:      </div>
+22:    
+23:    
+24:      <div>
+25:        <%= form.submit %>
+26:      </div>
+27:    <% end %>
+  
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:07:19 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 2.3ms | Allocations: 1412)
+  Rendered stories/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1476)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1564)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1816)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.text_area :text  rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text, style: "display: block" %>
+20:        <%= form.text_area :text  rows: 5, cols: 40 %>
+21:      </div>
+22:    
+23:    
+24:      <div>
+25:        <%= form.submit %>
+26:      </div>
+27:    <% end %>
+  
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/_form.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:08:34 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 3.0ms | Allocations: 1410)
+  Rendered stories/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1679)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1769)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2601)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: % >
+    <%= form.text_area :text  rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text, style: % >
+20:        <%= form.text_area :text  rows: 5, cols: 40 %>
+21:      </div>
+22:    
+23:    
+24:      <div>
+25:        <%= form.submit %>
+26:      </div>
+27:    <% end %>
+  
+app/views/stories/_form.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:09:14 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 1.5ms | Allocations: 1420)
+  Rendered stories/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1689)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1778)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2604)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text % >
+    <%= form.text_area :text  rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text % >
+20:        <%= form.text_area :text  rows: 5, cols: 40 %>
+21:      </div>
+22:    
+23:    
+24:      <div>
+25:        <%= form.submit %>
+26:      </div>
+27:    
+28:    <% end %>
+  
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:22:22 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 2.1ms | Allocations: 1410)
+  Rendered stories/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1474)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1562)
+Completed 500 Internal Server Error in 4ms (Allocations: 1814)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :text % >
+    <%= form.text_area :text  rows: 5, cols: 40 %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
+
+):
+1:    <%= form_with(model: story) do |form| %>
+2:      <% if story.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% story.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      <div>
+14:        <%= form.label :title, style: "display: block" %>
+15:        <%= form.text_field :title %>
+16:      </div>
+17:    
+18:      <div>
+19:        <%= form.label :text % >
+20:        <%= form.text_area :text  rows: 5, cols: 40 %>
+21:      </div>
+22:    
+23:    
+24:      <div>
+25:        <%= form.submit %>
+26:      </div>
+27:    
+28:    <% end %>
+  
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:19: syntax error, unexpected '>'
+app/views/stories/_form.html.erb:28: syntax error, unexpected `end', expecting ')'
+app/views/stories/_form.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/stories/new.html.erb:3
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:22:56 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 24.2ms | Allocations: 9368)
+  Rendered stories/new.html.erb within layouts/application (Duration: 25.6ms | Allocations: 9670)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 12527)
+Completed 200 OK in 34ms (Views: 32.4ms | Allocations: 13375)
+
+
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:23:28 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 5.1ms | Allocations: 1362)
+  Rendered stories/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1664)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4487)
+Completed 200 OK in 18ms (Views: 16.9ms | Allocations: 5335)
+
+
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:23:42 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 3.7ms | Allocations: 1367)
+  Rendered stories/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1669)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4492)
+Completed 200 OK in 15ms (Views: 13.5ms | Allocations: 5340)
+
+
+Started POST "/stories" for 127.0.0.1 at 2023-07-06 17:28:38 +0500
+Processing by StoriesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "story"=>{"title"=>"", "text"=>""}, "commit"=>"Create Story"}
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 1.9ms | Allocations: 1633)
+  Rendered stories/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1935)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4750)
+Completed 422 Unprocessable Entity in 46ms (Views: 7.8ms | ActiveRecord: 5.7ms | Allocations: 13230)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 17:32:40 +0500
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (1.8ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/_story.html.erb (Duration: 1.6ms | Allocations: 181)
+  Rendered stories/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1493)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 3818)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 1.8ms | Allocations: 4175)
+
+
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 17:32:42 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.9ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 811)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3119)
+Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 1.6ms | Allocations: 4019)
+
+
+Started POST "/likes?like%5Bstory_id%5D=7" for 127.0.0.1 at 2023-07-06 17:32:43 +0500
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"story_id"=>"7"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 530)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+devise (4.9.2) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (7.0.5) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.5) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.5) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.5) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.5) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.5) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.5) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.5) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.5) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.5) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.5) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.5) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.5) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stories/7" for 127.0.0.1 at 2023-07-06 17:32:43 +0500
+Processing by StoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  Rendering layout layouts/application.html.erb
+  Rendering stories/show.html.erb within layouts/application
+  Rendered stories/_story.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered stories/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 572)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2889)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 3676)
+
+
+Started DELETE "/stories/7" for 127.0.0.1 at 2023-07-06 17:32:47 +0500
+Processing by StoriesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"7"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:77:in `set_story'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/stories_controller.rb:52:in `destroy'
+  [1m[36mStory Destroy (2.4ms)[0m  [1m[31mDELETE FROM "stories" WHERE "stories"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/stories_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/stories_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/stories
+Completed 302 Found in 15ms (ActiveRecord: 4.8ms | Allocations: 2762)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 17:32:48 +0500
+Processing by StoriesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 806)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3144)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 3463)
+
+
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 17:32:49 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 4.7ms | Allocations: 958)
+  Rendered stories/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1047)
+  Rendered home/_header.html.erb (Duration: 6.0ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 3338)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 3615)
+
+
+Started POST "/stories" for 127.0.0.1 at 2023-07-06 17:32:58 +0500
+Processing by StoriesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "story"=>{"title"=>"Life at work", "text"=>"meow"}, "commit"=>"Create Story"}
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 5.7ms | Allocations: 1136)
+  Rendered stories/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1225)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3523)
+Completed 422 Unprocessable Entity in 21ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4622)
+
+
+Started GET "/stories" for 127.0.0.1 at 2023-07-06 18:02:52 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:6
+  Rendered stories/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1144)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 292)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 14716)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 16952)
+
+
+Started GET "/stories/new" for 127.0.0.1 at 2023-07-06 18:02:56 +0500
+Processing by StoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 4.2ms | Allocations: 1372)
+  Rendered stories/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1661)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3952)
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 5529)
+
+
+Started POST "/stories" for 127.0.0.1 at 2023-07-06 18:03:01 +0500
+Processing by StoriesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "story"=>{"title"=>"Life at work", "text"=>"uqwfguqwfg8qwyh"}, "commit"=>"Create Story"}
+  Rendering layout layouts/application.html.erb
+  Rendering stories/new.html.erb within layouts/application
+  Rendered stories/_form.html.erb (Duration: 4.5ms | Allocations: 1143)
+  Rendered stories/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1232)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3515)
+Completed 422 Unprocessable Entity in 30ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6365)
+
+

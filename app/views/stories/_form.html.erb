@@ -15,13 +15,13 @@
     <%= form.text_field :title %>
   </div>
 
-  <div>
-    <%= form.label :text, style: "display: block" %>
-    <%= form.text_field :text  %>
-  </div>
-
+      <div>
+        <%= form.label :Story %><br>
+        <%= form.text_area :text, rows: 10, cols: 40 %>
+    </div>
 
   <div>
     <%= form.submit %>
   </div>
+
 <% end %>
