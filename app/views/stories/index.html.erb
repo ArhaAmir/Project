@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Stories</h1>
-
+<h1>Your Stories</h1>
+<div class="row justify-content-center mt-4">
+<div class="col-md-6" text-center>
 <div id="stories">
   <% @stories.each do |story| %>
     <%= render story %>
@@ -12,3 +12,5 @@
 </div>
 
 <%= link_to " Write a new story", new_story_path %>
+</div>.
+</div>

@@ -57,6 +57,20 @@ class StoriesController < ApplicationController
     end
   end
 
+  def update
+    respond_to do |format|
+      if @story.update(story_params)
+        format.html { redirect_to story_url(@story), notice: "Story was successfully updated." }
+        format.json { render :show, status: :ok, location: @story }
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @story.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_story
@@ -67,4 +81,6 @@ class StoriesController < ApplicationController
     def story_params
       params.require(:story).permit(:story_id, :title, :text)
     end
+
+    def story
 end
