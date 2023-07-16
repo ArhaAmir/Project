@@ -1,0 +1,28 @@
+<% userdum = Userdum.new%>
+<%= form_with model: userdum do |f| %>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, placeholder: "Email", required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :contact %>
+    <%= f.number_field :contact, placeholder: "Contact", required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Name", required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :request %>
+    <%= f.text_area :requestContent, rows: 6, placeholder: "Enter your request content", required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Submit Request" %>
+  </div>
+<% end %>
+
+

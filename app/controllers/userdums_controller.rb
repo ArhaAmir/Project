@@ -1,45 +1,57 @@
 class UserdumsController < ApplicationController
     def index
-        @userdums = Userdum.all()
+      @userdums = Userdum.all
     end
+  
     def new
-        @userdum = Userdum.new
+      @userdum = Userdum.new
+      @userdum.build_help
     end
-
+  
     def create
-      # Userdum creation logic here        
       @userdum = Userdum.new(userdum_params)
-      @userdum.save
+      @userdum.build_help
+      if @userdum.save
+        redirect_to root_path, notice: "Request submitted successfully."
+      end
     end
-
+  
     def show
+      @userdum = Userdum.find(params[:id])
     end
-
+  
     def edit
+      @userdum = Userdum.find(params[:id])
     end
+  
+    def update
+      @userdum = Userdum.find(params[:id])
+      if @userdum.update(userdum_params)
+        redirect_to root_path, notice: 'User request has been updated successfully.'
+      else
+        render :edit
+      end
+    end
+  
     def destroy
       @userdum = Userdum.find(params[:id])
       @userdum.destroy
-      redirect_to root_path, notice: "User deleted."
+      redirect_to root_path, notice: "Request deleted."
     end
-    def helps
-        if @userdum.helps(userdum_params)
-            @helps = Help.find_by(userdum_id: @userdum.id)
-            @helps = @helps.userdum_id
-        else
-            @helps = "No helps found"
-        end
-    end
-    def update
-      if @userdum.update(userdum_params)
-          redirect_to root_path(@userdum), notice: 'User has been updated successfully.'
+  
+    def help
+      @userdum = Userdum.find(params[:id])
+      @helps = @userdum.help
+      if @helps.present?
+        @helps_content = @helps.requestContent
       else
-          render :edit
+        @helps_content = "No helps found"
       end
     end
-
+  
     private
     def userdum_params
-        params.require(:userdum).permit(:email, :password, :bio, :contact, :name)
+        params.require(:userdum).permit(:email, :contact, :name, help_attributes: [:requestContent])
     end
+       
 end

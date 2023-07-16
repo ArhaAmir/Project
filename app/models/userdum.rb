@@ -1,3 +1,4 @@
 class Userdum < ApplicationRecord
-    has_many :helps
+    has_one :help, inverse_of: :userdum
+    accepts_nested_attributes_for :help
 end
