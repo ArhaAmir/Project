@@ -1,48 +1,76 @@
 <%= notice %>
 <div class = 'block'>
 <div class='parent'>
-<h2>Listing Admins</h2>
-<%= link_to "Subscribe", home_subscription_path %>
-<%= link_to "Report", home_request_path %>
-<table class='table'>
-    <thead class='t-head'>
-        <tr>
-            <th>Email Address</th>
-        </tr>
-    </thead>
-    <tbody class='t-body'>
-        <% @users.each do |user| %> 
-            <tr>
-            <td><%= user.email%></td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
 
+<div class="admins">
 
- <table class='table'>
-    <thead class='t-head'>
-        <tr>
-            <th>Email Address</th>
-            <th>Name</th>
-            <th>Phone Number</th>
-            <th>Requests</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody class='t-body'>
-        <% @userdums.each do |user| %>
-            <tr>
-                <td><%= user.email %></td>
-                <td><%= user.name %></td>
-                <td><%= user.contact %></td>
-                <% helps = Help.find_by(userdum_id: user.id) %>
-                <td><%= helps&.requestContent %></td>
-                <td><%= button_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
-            </tr>
-        <% end %>
-    </tbody>
-</table> 
-<%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn" %>
+    <h2>Listing Admins</h2>
+
+    <div class="underline"></div>
+
+    <div class="table-container">
+        <table class='table'>
+            <thead class='t-head'>
+                <tr>
+                    <th>Email Address</th>
+                </tr>
+            </thead>
+            <tbody class='t-body'>
+                <% @users.each do |user| %> 
+                    <tr>
+                    <td><%= user.email%></td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<div class= "middle">
+
+    <h2>Complaints</h2>
+
+    <div class="underline"></div>
+
+    <div class="table-container">
+        <table class='table'>
+            <thead class='t-head'>
+                <tr>
+                    <th>Email Address</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Requests</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class='t-body'>
+                <% @userdums.each do |user| %>
+                    <tr>
+                        <td><%= user.email %></td>
+                        <td><%= user.name %></td>
+                        <td><%= user.contact %></td>
+                        <% helps = Help.find_by(userdum_id: user.id) %>
+                        <td><%= helps&.requestContent %></td>
+                        <td><%= button_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table> 
+    </div>
+    <%
+=begin%>
+ <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn" %> 
+<%
+=end%>
+
+</div>
+
+<div class="buttons">
+
+    <%= link_to "Subscribe", home_subscription_path, class: "subs" %>
+    <%= link_to "Report", home_request_path, class: "report" %>
+
+</div>
 
 </div>
